@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame0a10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_0_a_10"
+            android:layout_width="match_parent"
+            android:layout_height="1131dp"
+            android:background="@drawable/numeros_background_white"
+            tools:context=".Fragments.Numeros_0_a_10_Fragment">
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.13" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.87" />
+
+            <ImageButton
+                android:id="@+id/imageButtonDez"
+                android:layout_width="145dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/number_ten"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textNoveTraducao" />
+
+            <TextView
+                android:id="@+id/textDez"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:text="@string/number_ten"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonDez" />
+
+            <TextView
+                android:id="@+id/textDezTraducao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginBottom="200dp"
+                android:text="@string/number_ten_translate"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textDez" />
+
+            <TextView
+                android:id="@+id/textEspacoInferior"
+                android:layout_width="100dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="200dp"
+                android:text=""
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textDezTraducao" />
+
+            <ImageButton
+                android:id="@+id/imageButtonNove"
+                android:layout_width="145dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/number_nine"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toBottomOf="@+id/textSeteTraducao" />
+
+            <TextView
+                android:id="@+id/textNoveTraducao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="55dp"
+                android:layout_marginRight="55dp"
+                android:text="@string/number_nine_translate"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/textNove" />
+
+            <TextView
+                android:id="@+id/textNove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:text="@string/number_nine"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonNove" />
+
+            <ImageButton
+                android:id="@+id/imageButtonOito"
+                android:layout_width="145dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/number_eight"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textSeisTraducao" />
+
+            <TextView
+                android:id="@+id/textOito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:text="@string/number_eight"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonOito" />
+
+            <TextView
+                android:id="@+id/textOitoTraducao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="55dp"
+                android:text="@string/number_eight_translate"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textOito" />
+
+            <TextView
+                android:id="@+id/textSete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:text="@string/number_seven"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonSete" />
+            tools:layout_editor_absoluteY="722dp" />
+
+            <TextView
+                android:id="@+id/textSeteTraducao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="57dp"
+                android:layout_marginRight="57dp"
+                android:text="@string/number_seven_translate"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/textSete" />
+
+            <ImageButton
+                android:id="@+id/imageButtonSeis"
+                android:layout_width="145dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/number_six"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textQuatroTraducao" />
+
+            <TextView
+                android:id="@+id/textSeis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginLeft="45dp"
+                android:text="@string/number_six"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonSeis" />
+
+            <TextView
+                android:id="@+id/textSeisTraducao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="55dp"
+                android:text="@string/number_six_translate"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textSeis" />
+
+
+            <ImageButton
+                android:id="@+id/imageButtonCinco"
+                android:layout_width="145dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/number_five"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toBottomOf="@+id/textTresTraducao" />
+
+            <TextView
+                android:id="@+id/textCinco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:text="@string/number_five"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonCinco" />
+
+            <TextView
+                android:id="@+id/textCincoTraducao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="55dp"
+                android:layout_marginRight="55dp"
+                android:text="@string/number_five_translate"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/textCinco" />
+
+            <ImageButton
+                android:id="@+id/imageButtonQuatro"
+                android:layout_width="145dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/number_four"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textCerejaTraducao" />
+
+            <TextView
+                android:id="@+id/textQuatro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:text="@string/number_four"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonQuatro" />
+
+            <TextView
+                android:id="@+id/textQuatroTraducao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:text="@string/number_four_translate"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textQuatro" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.13" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.87" />
+
+            <ImageButton
+                android:id="@+id/imageButtonTres"
+                android:layout_width="145dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/number_three"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toBottomOf="@+id/textUmTraducao" />
+
+            <TextView
+                android:id="@+id/textTres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="55dp"
+                android:layout_marginRight="55dp"
+                android:text="@string/number_three"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonTres" />
+
+            <TextView
+                android:id="@+id/textTresTraducao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="55dp"
+                android:layout_marginRight="55dp"
+                android:text="@string/number_three_translate"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/textTres" />
+
+            <ImageButton
+                android:id="@+id/imageButtonDois"
+                android:layout_width="145dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/number_two"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textMacaTraducao" />
+
+            <TextView
+                android:id="@+id/textDois"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="55dp"
+                android:text="@string/number_two"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonDois" />
+
+            <TextView
+                android:id="@+id/textCerejaTraducao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="55dp"
+                android:text="@string/number_two_translate"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textDois" />
+
+            <ImageButton
+                android:id="@+id/imageButtonUm"
+                android:layout_width="145dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="24dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/number_one"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textUm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:text="@string/number_one"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonUm" />
+
+            <TextView
+                android:id="@+id/textUmTraducao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="62dp"
+                android:layout_marginRight="62dp"
+                android:text="@string/number_one_translate"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/textUm" />
+
+            <ImageButton
+                android:id="@+id/imageButtonZero"
+                android:layout_width="145dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="24dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/number_zero"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textMaca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:text="@string/number_zero"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textMacaTraducao"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonZero" />
+
+            <TextView
+                android:id="@+id/textMacaTraducao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="55dp"
+                android:text="@string/number_zero_translate"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textMaca" />
+
+            <ImageButton
+                android:id="@+id/imageButtonSete"
+                android:layout_width="145dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toBottomOf="@+id/textCincoTraducao"
+                app:srcCompat="@drawable/number_seven" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+    <include layout="@layout/fragment_botao_volume"></include>
+    <include layout="@layout/fragment_botao_voltar"></include>
+
+</FrameLayout>
+

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameNumeros"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Fragments.NumerosFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.87" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.13" />
+
+            <Button
+                android:id="@+id/buttonNumeros0a10"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/button_numeros"
+                android:text="@string/button_numeros_0_a_10"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/buttonNumeros11a20"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/button_numeros"
+                android:text="@string/button_numeros_11_a_20"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/buttonNumeros0a10" />
+
+            <Button
+                android:id="@+id/buttonNumeros21a30"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/button_numeros"
+                android:text="@string/button_numeros_21_a_30"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/buttonNumeros11a20" />
+
+            <Button
+                android:id="@+id/buttonNumeros31a40"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/button_numeros"
+                android:text="@string/button_numeros_31_a_40"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/buttonNumeros21a30" />
+
+            <Button
+                android:id="@+id/buttonNumeros41a50"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/button_numeros"
+                android:text="@string/button_numeros_41_a_50"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/buttonNumeros31a40" />
+
+            <Button
+                android:id="@+id/buttonNumeros51a60"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/button_numeros"
+                android:text="@string/button_numeros_51_a_60"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toBottomOf="@+id/buttonNumeros41a50" />
+
+            <Button
+                android:id="@+id/buttonNumeros61a70"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/button_numeros"
+                android:text="@string/button_numeros_61_a_70"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/buttonNumeros51a60" />
+
+            <Button
+                android:id="@+id/buttonNumeros71a80"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/button_numeros"
+                android:text="@string/button_numeros_71_a_80"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/buttonNumeros61a70" />
+
+            <Button
+                android:id="@+id/buttonNumeros11a10"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/button_numeros"
+                android:text="@string/button_numeros_10_a_100"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/buttonNumeros11a11" />
+
+            <Button
+                android:id="@+id/buttonNumeros0a6"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/button_numeros"
+                android:text="@string/button_numeros_81_a_90"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/buttonNumeros71a80" />
+
+            <Button
+                android:id="@+id/buttonNumeros11a11"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/button_numeros"
+                android:text="@string/button_numeros_91_a_100"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/buttonNumeros0a6" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameAlimentos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AlimentosFragment">
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"> -->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_0_a_10"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.87" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.13" />
+
+            <Button
+                android:id="@+id/buttonFrutas"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_frutas"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/buttonVegetais"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_vegetais"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/buttondeserts"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/button_sobremesas"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toBottomOf="@+id/buttonFrutas" />
+
+            <Button
+                android:id="@+id/buttondrinks2"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/button_outros"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toBottomOf="@+id/buttondeserts" />
+
+            <Button
+                android:id="@+id/buttondrinks"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/button_bebidas"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/buttonVegetais" />
+
+            <Button
+                android:id="@+id/buttondrinks3"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/button_refeicoes"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/buttondrinks" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- </ScrollView> -->
+</FrameLayout>

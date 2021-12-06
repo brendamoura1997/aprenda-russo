@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameVegetais"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintVegetais"
+            android:layout_width="match_parent"
+            android:layout_height="1131dp"
+            android:background="@drawable/numeros_background_white"
+            tools:context=".Fragments.AlimentosFrutasFragment">
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.13" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.87" />
+
+            <TextView
+                android:id="@+id/textEspacoInferior"
+                android:layout_width="100dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="50dp"
+                android:text=""
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textBrocolisTraducao" />
+
+            <ImageButton
+                android:id="@+id/imageButtonBrocolis"
+                android:layout_width="145dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vegetables_broccoli"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textRepolhoTraducao" />
+
+            <TextView
+                android:id="@+id/textBrocolis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:text="@string/vegetables_broccoli"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonBrocolis" />
+
+            <TextView
+                android:id="@+id/textBrocolisTraducao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="43dp"
+                android:layout_marginLeft="43dp"
+                android:text="@string/vegetables_broccoli_translate"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textBrocolis" />
+
+            <ImageButton
+                android:id="@+id/imageButtonRepolho"
+                android:layout_width="145dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vegetables_cabbage"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toBottomOf="@+id/textPimentaTraducao" />
+
+            <TextView
+                android:id="@+id/textRepolhoTraducao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:text="@string/vegetables_cabbage_translate"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/textRepolho" />
+
+            <TextView
+                android:id="@+id/textRepolho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:text="@string/vegetables_cabbage"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonRepolho" />
+
+            <ImageButton
+                android:id="@+id/imageButtonCenoura"
+                android:layout_width="145dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vegetables_carrot"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textMilhoTraducao" />
+
+            <TextView
+                android:id="@+id/textCenoura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:text="@string/vegetables_carrot"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonCenoura" />
+
+            <TextView
+                android:id="@+id/textCenouraTraducao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="47dp"
+                android:layout_marginLeft="47dp"
+                android:text="@string/vegetables_carrot_translate"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textCenoura" />
+
+            <ImageButton
+                android:id="@+id/imageButtonPimenta"
+                android:layout_width="145dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toBottomOf="@+id/textPepinoTraducao"
+                app:srcCompat="@drawable/vegetables_chilli" />
+
+            <TextView
+                android:id="@+id/textPimenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:text="@string/vegetables_pepper"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonPimenta" /><![CDATA[
+            tools:layout_editor_absoluteY="722dp" />
+
+            ]]>
+
+            <TextView
+                android:id="@+id/textPimentaTraducao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:text="@string/vegetables_pepper_translate"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/textPimenta" />
+
+            <ImageButton
+                android:id="@+id/imageButtonMilho"
+                android:layout_width="145dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vegetables_corn"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textBeringelaTraducao" />
+
+            <TextView
+                android:id="@+id/textMilho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:text="@string/vegetables_corn"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonMilho" />
+
+            <TextView
+                android:id="@+id/textMilhoTraducao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="55dp"
+                android:text="@string/vegetables_corn_translate"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textMilho" />
+
+
+            <ImageButton
+                android:id="@+id/imageButtonPepino"
+                android:layout_width="145dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vegetables_cucumber"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toBottomOf="@+id/textAlfaceTraducao" />
+
+            <TextView
+                android:id="@+id/textPepino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="43dp"
+                android:layout_marginRight="43dp"
+                android:text="@string/vegetables_cucumber"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonPepino" />
+
+            <TextView
+                android:id="@+id/textPepinoTraducao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:text="@string/vegetables_cucumber_translate"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/textPepino" />
+
+            <ImageButton
+                android:id="@+id/imageButtonBeringela"
+                android:layout_width="145dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vegetables_eggplant"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textCebolaTraducao" />
+
+            <TextView
+                android:id="@+id/textBeringela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:text="@string/vegetables_eggplant"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonBeringela" />
+
+            <TextView
+                android:id="@+id/textBeringelaTraducao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginLeft="45dp"
+                android:text="@string/vegetables_eggplant_translate"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textBeringela" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.13" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.87" />
+
+            <ImageButton
+                android:id="@+id/imageButtonAlface"
+                android:layout_width="145dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vegetables_lettuce"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toBottomOf="@+id/textErvilhaTraducao" />
+
+            <TextView
+                android:id="@+id/textAlface"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/vegetables_lettuce"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonAlface" />
+
+            <TextView
+                android:id="@+id/textAlfaceTraducao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="53dp"
+                android:layout_marginRight="53dp"
+                android:text="@string/vegetables_lettuce_translate"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/textAlface" />
+
+            <ImageButton
+                android:id="@+id/imageButtonCebola"
+                android:layout_width="145dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vegetables_onion"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textSaladaTraducao" />
+
+            <TextView
+                android:id="@+id/textCebola"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="55dp"
+                android:text="@string/vegetables_onion"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonCebola" />
+
+            <TextView
+                android:id="@+id/textCebolaTraducao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:text="@string/vegetables_onion_translate"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textCebola" />
+
+            <ImageButton
+                android:id="@+id/imageButtonErvilha"
+                android:layout_width="145dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="32dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vegetables_peas"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textErvilha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:text="@string/vegetables_pea"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonErvilha" />
+
+            <TextView
+                android:id="@+id/textErvilhaTraducao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:text="@string/vegetables_pea_translate"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/textErvilha" />
+
+            <ImageButton
+                android:id="@+id/imageButtonSalada"
+                android:layout_width="145dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="32dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vegetables_salad"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textSalada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginLeft="45dp"
+                android:text="@string/vegetables_salad"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textSaladaTraducao"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonSalada" />
+
+            <TextView
+                android:id="@+id/textSaladaTraducao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:text="@string/vegetables_salat_translate"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textSalada" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <include layout="@layout/fragment_botao_volume"></include>
+    <include layout="@layout/fragment_botao_voltar"></include>
+
+</FrameLayout>
+

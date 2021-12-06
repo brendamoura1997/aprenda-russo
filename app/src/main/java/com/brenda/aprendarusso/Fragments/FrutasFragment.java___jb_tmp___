@@ -1,0 +1,298 @@
+package com.brenda.aprendarusso.Fragments;
+
+
+import android.content.Context;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
+import android.os.Bundle;
+
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.SeekBar;
+
+import com.brenda.aprendarusso.R;
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class FrutasFragment extends Fragment implements View.OnClickListener {
+
+
+
+    private AlimentosFragment alimentosFragment;
+
+    private ImageButton imageButtonMaca, imageButtonBanana, imageButtonCereja,
+                        imageButtonCoco, imageButtonUva, imageButtonKiwi,
+                        imageButtonLimao, imageButtonManga, imageButtonAzeitona,
+                        imageButtonLaranja, imageButtonPessego;
+
+
+
+    ///////////// AUDIOS E BOTÕES /////////////////
+    private MediaPlayer mediaPlayer;
+    public AudioManager audioManager;
+    public SeekBar seekVolume;
+    public Button buttonVolume, buttonVoltar;
+    //////////////////////////////////////////////
+
+    public FrutasFragment() {
+        // Required empty public constructor
+    }
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+
+        View view = inflater.inflate(R.layout.fragment_frutas, container, false);
+
+
+        imageButtonMaca = view.findViewById(R.id.imageButtonMaca);
+        imageButtonBanana = view.findViewById(R.id.imageButtonBanana);
+        imageButtonCereja = view.findViewById(R.id.imageButtonCereja);
+        imageButtonCoco = view.findViewById(R.id.imageButtonCoco);
+        imageButtonUva = view.findViewById(R.id.imageButtonUva);
+        imageButtonKiwi = view.findViewById(R.id.imageButtonKiwi);
+        imageButtonLimao = view.findViewById(R.id.imageButtonLimao);
+        imageButtonManga = view.findViewById(R.id.imageButtonManga);
+        imageButtonAzeitona = view.findViewById(R.id.imageButtonAzeitona);
+        imageButtonLaranja = view.findViewById(R.id.imageButtonLaranja);
+        imageButtonPessego = view.findViewById(R.id.imageButtonPessego);
+
+
+        ////////////// BOTOES ////////////////////////
+        seekVolume = view.findViewById(R.id.seekVolume);
+        buttonVolume = view.findViewById(R.id.buttonVolume);
+        buttonVoltar = view.findViewById(R.id.buttonVoltar);
+        hideSeekVolume();
+
+        ConstraintLayout constraintLayout = view.findViewById(R.id.constraintFrutas);
+        constraintLayout.setOnClickListener(this);
+
+        inicializarSeekVolume();
+        ///////////////////////////////////////////////
+
+        imageButtonMaca.setOnClickListener(this);
+        imageButtonBanana.setOnClickListener(this);
+        imageButtonCereja.setOnClickListener(this);
+        imageButtonCoco.setOnClickListener(this);
+        imageButtonUva.setOnClickListener(this);
+        imageButtonKiwi.setOnClickListener(this);
+        imageButtonLimao.setOnClickListener(this);
+        imageButtonManga.setOnClickListener(this);
+        imageButtonAzeitona.setOnClickListener(this);
+        imageButtonLaranja.setOnClickListener(this);
+        imageButtonPessego.setOnClickListener(this);
+        buttonVoltar.setOnClickListener(this);
+        buttonVolume.setOnClickListener(this);
+
+
+
+
+        return view;
+    }
+
+
+    public void hideSeekVolume(){
+        seekVolume.setVisibility(View.GONE);
+    }
+    public void showSeekVolume() { seekVolume.setVisibility(View.VISIBLE); }
+
+
+    @Override
+    public void onClick(View v) {
+        
+        int flag;
+        switch (v.getId()){
+
+            case R.id.imageButtonMaca:
+                hideSeekVolume();
+                mediaPlayer = MediaPlayer.create(getActivity(), R.raw.fruit_apple);
+                flag = 0;
+                efeitoImagemPressionada(flag);
+                executarSom();
+                break;
+            case R.id.imageButtonBanana:
+                hideSeekVolume();
+                mediaPlayer = MediaPlayer.create(getActivity(), R.raw.fruit_banana);
+                flag = 1;
+                efeitoImagemPressionada(flag);
+                executarSom();
+                break;
+            case R.id.imageButtonCereja:
+                hideSeekVolume();
+                mediaPlayer = MediaPlayer.create(getActivity(), R.raw.fruit_cherry);
+                flag = 2;
+                efeitoImagemPressionada(flag);
+                executarSom();
+                break;
+            case R.id.imageButtonCoco:
+                hideSeekVolume();
+                mediaPlayer = MediaPlayer.create(getActivity(), R.raw.fruit_coconut);
+                flag = 3;
+                efeitoImagemPressionada(flag);
+                executarSom();
+                break;
+            case R.id.imageButtonUva:
+                hideSeekVolume();
+                mediaPlayer = MediaPlayer.create(getActivity(), R.raw.fruit_grape);
+                flag = 4;
+                efeitoImagemPressionada(flag);
+                executarSom();
+                break;
+            case R.id.imageButtonKiwi:
+                hideSeekVolume();
+                mediaPlayer = MediaPlayer.create(getActivity(), R.raw.fruit_kiwi);
+                flag = 5;
+                efeitoImagemPressionada(flag);
+                executarSom();
+                break;
+            case R.id.imageButtonLimao:
+                hideSeekVolume();
+                mediaPlayer = MediaPlayer.create(getActivity(), R.raw.fruit_lemon);
+                flag = 6;
+                efeitoImagemPressionada(flag);
+                executarSom();
+                break;
+            case R.id.imageButtonManga:
+                hideSeekVolume();
+                mediaPlayer = MediaPlayer.create(getActivity(), R.raw.fruit_mango);
+                flag = 7;
+                efeitoImagemPressionada(flag);
+                executarSom();
+                break;
+            case R.id.imageButtonAzeitona:
+                hideSeekVolume();
+                mediaPlayer = MediaPlayer.create(getActivity(), R.raw.fruit_olive);
+                flag = 8;
+                efeitoImagemPressionada(flag);
+                executarSom();
+                break;
+            case R.id.imageButtonLaranja:
+                hideSeekVolume();
+                mediaPlayer = MediaPlayer.create(getActivity(), R.raw.fruit_orange);
+                flag = 9;
+                efeitoImagemPressionada(flag);
+                executarSom();
+                break;
+            case R.id.imageButtonPessego:
+                hideSeekVolume();
+                mediaPlayer = MediaPlayer.create(getActivity(), R.raw.fruit_peach);
+                flag = 10;
+                efeitoImagemPressionada(flag);
+                executarSom();
+                break;
+
+
+            case R.id.constraintFrutas:
+                hideSeekVolume();
+                break;
+
+            case R.id.buttonVolume:
+                if(seekVolume.getVisibility() == View.VISIBLE){
+                    hideSeekVolume();
+                }else{
+                    showSeekVolume();
+                }
+                break;
+
+            case R.id.buttonVoltar:
+                hideSeekVolume();
+                alimentosFragment = new AlimentosFragment();
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.frameAlimentos, alimentosFragment);
+                fragmentTransaction.commit();
+
+                break;
+        }
+    }
+
+    public void efeitoImagemPressionada(int flag){
+        //VERMELHO
+        if(flag == 0){ imageButtonMaca.setAlpha(50); }
+
+        else if(flag == 1){ imageButtonBanana.setAlpha(50); }
+
+        else if(flag == 2){ imageButtonCereja.setAlpha(50);}
+
+        else if(flag == 3){ imageButtonCoco.setAlpha(50);}
+
+        else if(flag == 4){ imageButtonUva.setAlpha(50); }
+
+        else if(flag == 5){ imageButtonKiwi.setAlpha(50); }
+
+        else if(flag == 6){ imageButtonLimao.setAlpha(50); }
+
+        else if(flag == 7){ imageButtonManga.setAlpha(50); }
+
+        else if(flag == 8){ imageButtonAzeitona.setAlpha(50); }
+
+        else if(flag == 9){ imageButtonLaranja.setAlpha(50); }
+
+        else if(flag == 10){ imageButtonPessego.setAlpha(50); }
+    }
+
+
+    public void executarSom(){
+
+        if(mediaPlayer != null){
+            mediaPlayer.start();
+        }
+
+        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                imageButtonMaca .setAlpha(255);
+                imageButtonBanana .setAlpha(255);
+                imageButtonCereja .setAlpha(255);
+                imageButtonCoco .setAlpha(255);
+                imageButtonUva .setAlpha(255);
+                imageButtonKiwi .setAlpha(255);
+                imageButtonLimao .setAlpha(255);
+                imageButtonManga .setAlpha(255);
+                imageButtonAzeitona .setAlpha(255);
+                imageButtonLaranja .setAlpha(255);
+                imageButtonPessego .setAlpha(255);
+            }
+        });
+    }
+    public void inicializarSeekVolume() {
+        audioManager = (AudioManager) getActivity().getSystemService(Context.AUDIO_SERVICE);
+
+        int volumeMaximo = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
+        int volumeAtual = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
+
+        seekVolume.setMax(volumeMaximo);
+        seekVolume.setProgress(volumeAtual);
+
+
+        seekVolume.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, progress, AudioManager.FLAG_SHOW_UI);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+    }
+    //Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
+}

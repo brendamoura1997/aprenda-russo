@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">AprendaRusso</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- ********************* COLORS ********************* -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="color_red">красный</string>
+    <string name="color_yellow">желтый</string>
+    <string name="color_red_translate">vermelho</string>
+    <string name="color_yellow_translate">amarelo</string>
+    <string name="color_blue">синий</string>
+    <string name="color_green">зеленый</string>
+    <string name="color_orange">оранжевый</string>
+    <string name="color_violet">Фиолетовый</string>
+    <string name="color_blue_translate">azul</string>
+    <string name="color_green_translate">verde</string>
+    <string name="color_orange_translate">laranja</string>
+    <string name="color_violet_translate">violeta</string>
+
+    <string name="color_black">черный</string>
+    <string name="color_white">белый</string>
+    <string name="color_white_translate">branco</string>
+    <string name="color_black_translate">preto</string>
+    <string name="color_cinza">серый</string>
+    <string name="color_beige">бежевый</string>
+    <string name="color_gray_translate">cinza</string>
+    <string name="color_beige_translate">bege</string>
+    <string name="color_brown">коричневый</string>
+    <string name="color_pink">розовый</string>
+    <string name="color_bown_translate">marrom</string>
+    <string name="color_pink_translate">rosa</string>
+
+    <!-- ********************* NUMBERS ********************* -->
+    <string name="button_numeros_0_a_10">0 - 10</string>
+    <string name="button_numeros_11_a_20">11 - 20</string>
+    <string name="button_numeros_21_a_30">21 - 30</string>
+    <string name="button_numeros_31_a_40">31 - 40</string>
+    <string name="button_numeros_41_a_50">41 - 50</string>
+    <string name="button_numeros_51_a_60">51 - 60</string>
+    <string name="button_numeros_61_a_70">61 - 70</string>
+    <string name="button_numeros_71_a_80">71 - 80</string>
+    <string name="button_numeros_81_a_90">81 - 90</string>
+    <string name="button_numeros_91_a_100">91 - 100</string>
+    <string name="button_numeros_10_a_100">10 - 100</string>
+    <string name="title_activity_fab">FABActivity</string>
+
+
+    <!-- ********** NUMBERS 0 - 10 ************* -->
+    <string name="number_zero">ноль</string>
+    <string name="number_one">один</string>
+    <string name="number_two">два</string>
+    <string name="number_three">три</string>
+    <string name="number_four">четыре</string>
+    <string name="number_five">пять</string>
+    <string name="number_zero_translate">zero</string>
+    <string name="number_one_translate">um</string>
+    <string name="number_two_translate">dois</string>
+    <string name="number_three_translate">três</string>
+    <string name="number_four_translate">quatro</string>
+    <string name="number_five_translate">cinco</string>
+    <string name="number_six">шесть</string>
+    <string name="number_six_translate">seis</string>
+    <string name="number_seven">семь</string>
+    <string name="number_seven_translate">sete</string>
+    <string name="number_eight">восемь</string>
+    <string name="number_eight_translate">oito</string>
+    <string name="number_nine">девять</string>
+    <string name="number_nine_translate">nove</string>
+    <string name="number_ten">десять</string>
+    <string name="number_ten_translate">dez</string>
+    <string name="numeros_de_0_a_40">———————— Números de 0 a 40 ————————</string>
+    <string name="numeros_de_41_a_80">———————— Números de 41 a 80 ———————</string>
+    <string name="numeros_de_81_a_100">———————— Números de 81 a 100 ———————</string>
+
+
+    <!-- ****************** aliments ********************* *-->
+    <string name="aliments_fruits_translate">FRUTAS</string>
+    <string name="aliments_vegetables_translate">VEGETAIS</string>
+    <string name="aliments_deserts_translate">SOBREMESAS</string>
+    <string name="aliments_drinks_translate">BEBIDASs</string>
+    <string name="aliments_others_translate">OUTROS</string>
+
+
+    <!-- ****************** FRUTAS ********************* *-->
+    <string name="fruits_banana_translate">banana</string>
+    <string name="fruits_cherry_translate">cereja</string>
+    <string name="fruits_coconut_translate">côco</string>
+    <string name="fruits_grape_translate">uva</string>
+    <string name="fruits_kiwi_translate">kiwi</string>
+    <string name="fruits_apple">яблоко</string>
+    <string name="fruits_apple_translate">maçã</string>
+    <string name="fruits_banana">банан</string>
+    <string name="fruits_cherry">вишня</string>
+    <string name="fruits_coconut">кокос</string>
+    <string name="fruits_grape">виноград</string>
+    <string name="fruits_kiwi">киви</string>
+    <string name="fruits_lemon_translate">limão</string>
+    <string name="fruits_mango_translate">manga</string>
+    <string name="fruits_olive_translate">azeitona</string>
+    <string name="fruits_orange_translate">laranja</string>
+    <string name="fruits_peach_translate">pêssego</string>
+    <string name="fruits_peach">персик</string>
+    <string name="fruits_orange">апельсин</string>
+    <string name="fruits_lemon">лимон</string>
+    <string name="fruits_olive">оливка</string>
+    <string name="fruits_mango">манго</string>
+    <string name="fruits_vegetables">Verduras</string>
+
+
+    <!-- ****************** VEGETAIS ********************* *-->
+    <string name="vegetables_salad">салат</string>
+    <string name="vegetables_pea">гороховый</string>
+    <string name="vegetables_onion">лук</string>
+    <string name="vegetables_lettuce">салат-латук</string>
+    <string name="vegetables_eggplant">баклажан</string>
+    <string name="vegetables_cucumber">огурец</string>
+    <string name="vegetables_salat_translate">salada</string>
+    <string name="vegetables_pea_translate">ervilha</string>
+    <string name="vegetables_onion_translate">cebola</string>
+    <string name="vegetables_lettuce_translate">alface</string>
+    <string name="vegetables_eggplant_translate">beringela</string>
+    <string name="vegetables_cucumber_translate">pepino</string>
+    <string name="vegetables_corn">кукуруза</string>
+    <string name="vegetables_pepper">перец</string>
+    <string name="vegetables_carrot">морковь</string>
+    <string name="vegetables_cabbage">капуста</string>
+    <string name="vegetables_broccoli">брокколи</string>
+    <string name="vegetables_corn_translate">milho</string>
+    <string name="vegetables_pepper_translate">pimenta</string>
+    <string name="vegetables_carrot_translate">cenoura</string>
+    <string name="vegetables_cabbage_translate">repolho</string>
+    <string name="vegetables_broccoli_translate">brócolis</string>
+    <string name="aliments_vegetais">VEGETAIS</string>
+
+
+</resources>
